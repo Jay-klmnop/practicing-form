@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>스터디 참여 설문조사</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>스터디 수요조사</h1>
+        <ul>
+            <li>
+                <a href="#first">개인정보</a>
+            </li>
+            <li>
+                <a href="#second">설문문항</a>
+            </li>
+            <li>
+                <a href="#third">추가의견</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <form action="/signup" method="post">
+            <fieldset id="first">
+                <legend>개인정보</legend>
+                <label for="name">아이디</label>
+                <input type="text" name="name" id="name" placeholder="FE 13 김오즈">
+                <br>
+                <label for="class">학습반</label>
+                <select name="class" id="class">
+                    <option value="x" selected>--선택--</option>
+                    <option value="low">새싹반</option>
+                    <option value="med">열정반</option>
+                    <option value="high">심화반</option>
+                </select>
+                <br>
+                <label for="email">이메일</label>
+                <input type="text" name="email" id="email" placeholder="example@google.com">
+                <br>
+                <label for="age">연령대</label>
+                <label for="20">
+                    <input type="radio" name="radio" id="20">
+                    20대
+                </label>
+                <label for="30">
+                    <input type="radio" name="radio" id="30">
+                    30대
+                </label>
+                <label for="40">
+                    <input type="radio" name="radio" id="40">
+                    40대
+                </label>
+                <label for="50">
+                    <input type="radio" name="radio" id="50">
+                    50대
+                </label>
+                <label for="60up">
+                    <input type="radio" name="radio" id="60up">
+                    60대 이상
+                </label>
+            </fieldset>
+            <br>
+            <fieldset id="second">
+                <legend>설문문항</legend>
+                <p>실제로 참여 가능한 요일/시간대만 선택해주세요!</p>
+                <div class="container">
+                    <table>
+                        <caption>
+                            7월 일정
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th class="weekend">Sat</th>
+                                <th class="weekend">Sun</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="june">30</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="august">1</td>
+                                <td class="august">2</td>
+                                <td class="august">3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="q">7월 참여 가능 요일:</p>
+                <label for="mon">월</label>
+                <input type="checkbox" id="mon">
+                <label for="tue">화</label>
+                <input type="checkbox" id="tue">
+                <label for="wed">수</label>
+                <input type="checkbox" id="wed">
+                <label for="thu">목</label>
+                <input type="checkbox" id="thu">
+                <label for="fri">금</label>
+                <input type="checkbox" id="fri">
+                <label for="sat">토</label>
+                <input type="checkbox" id="sat">
+                <label for="sun">일</label>
+                <input type="checkbox" id="sun">
+                <p class="q">7월 참여 선호 시간대:</p>
+                <label for="morning">오전</label>
+                <input type="checkbox" id="morning" class="time">
+                <label for="afternoon">오후</label>
+                <input type="checkbox" id="afternoon" class="time">
+                <label for="evening">저녁</label>
+                <input type="checkbox" id="evening" class="time">
+            </fieldset>
+            <br>
+            <fieldset id="third">
+                <legend>추가의견</legend>
+                <p class="feedback">스터디에 대해 궁금한 사항이 있거나 개선방안이 있다면 언제든 말해주세요!</p>
+                <textarea name="feedback" id="feedback" cols="40" rows="5"></textarea>
+            </fieldset>
+            <input type="submit" class="submit" id="submit" value="제출">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 설문조사 양식</p>
+    </footer>
+</body>
+
+</html>

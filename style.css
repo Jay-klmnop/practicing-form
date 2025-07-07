@@ -1,0 +1,78 @@
+body {
+    font-family: IBM Plex Sans KR, system-ui;
+    color: lavender;
+    background-color: rgb(65, 105, 225);
+    margin: 20px;
+}
+
+a {
+    color: rgb(173, 200, 230);
+}
+
+legend {
+    font-size: 24px;
+}
+
+header,
+fieldset {
+    margin: 0 20px;
+}
+
+#first,
+#second,
+#third {
+    padding: 10px 20px 20px;
+}
+
+label {
+    margin: 20px 10px;
+}
+
+.container {
+    display: inline-block;
+    border: 1px solid lavender;
+    padding: 15px;
+    border-radius: 8px;
+    margin-left: 7px;
+}
+
+table {
+    border-collapse: collapse;
+    align-items: center;
+}
+
+th,
+td {
+    border: 1px solid lavender;
+    width: 39px;
+}
+
+.june,
+.august {
+    color: rgb(177, 177, 177);
+}
+
+.weekend {
+    color: rgb(197, 94, 94);
+}
+
+.time {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 12px;
+    color: rgb(222, 222, 255);
+    margin-left: 5px;
+    margin-top: 0;
+}
+
+.q {
+    margin-top: 5px;
+}
+
+.submit {
+    margin: 30px 20px;
+    width: 100px;
+    height: 35px;
+}
