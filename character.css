@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+
+body {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: black;
+    color: #daa520;
+}
+
+header {
+    position: relative;
+    font-family: "Press Start 2P", system-ui;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.star {
+    position: absolute;
+    image-rendering: pixelated;
+}
+
+#star1 {
+    width: 90px;
+    bottom: 60px;
+    left: -45px;
+    z-index: 5;
+}
+
+#star2 {
+    width: 150px;
+    top: -10px;
+    right: -86px;
+    z-index: 5;
+}
+
+#star3 {
+    width: 40px;
+    top: 15px;
+    left: 90px;
+    z-index: 25;
+}
+
+h1 {
+    position: relative;
+    font-size: 56px;
+    color: #f0f0f0;
+    z-index: 20;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    width: 600px;
+    gap: 20px;
+}
+
+.input {
+    width: 100%;
+    height: 70px;
+    font-family: "Press Start 2P", system-ui;
+    padding-left: 10px;
+    background-color: black;
+    color: #f0f0f0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 8px;
+    border-image-slice: 4;
+    border-image-source: url('assets/border_llllightgrey_16px.png');
+    image-rendering: pixelated;
+}
+
+.input:focus {
+    outline: none;
+    border-image-source: url(assets/border_lightgold_16px.png);
+}
+
+.box {
+    appearance: none;
+    -webkit-appearance: none;
+    margin-top: -15px;
+}
+
+.box+label::before {
+    content: '☐ ';
+    font-size: 20px;
+    font-weight: bold;
+    color: #f0f0f0;
+    margin-right: 10px;
+    vertical-align: middle;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box:checked+label::before {
+    content: '☑ ';
+    color: #daa520;
+}
+
+.box:focus+label::before {
+    text-shadow: 0 0 5px goldenrod;
+}
+
+label {
+    margin-top: -15px;
+    margin-bottom: 10px;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 14px;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.button {
+    height: 75px;
+    font-family: "Press Start 2P", system-ui;
+    background-color: black;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 100px;
+    transition: transform 0.1s;
+    appearance: none;
+    border-style: solid;
+    border-width: 8px;
+    border-image-slice: 4 fill;
+    border-image-source: url('assets/button_gold.png');
+    image-rendering: pixelated;
+}
+
+.button:hover {
+    transform: scale(1.01);
+}
+
+.button:active {
+    transform: translateY(2px);
+}
