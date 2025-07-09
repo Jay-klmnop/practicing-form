@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.snowball {
+    background-color: aliceblue;
+    position: relative;
+}
+
+.snowball1 {
+    width: 200px;
+    height: 190px;
+    border-radius: 50%;
+    margin-top: -35px;
+}
+
+.snowball1::before {
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    background-color: aliceblue;
+    bottom: 55px;
+    right: -90px;
+    border-radius: 0 25px 80% 0;
+    transform: rotate(-33deg);
+    z-index: 5;
+}
+
+.snowball2 {
+    width: 150px;
+    height: 140px;
+    border-radius: 50%;
+    margin-top: -20px;
+}
+
+.snowball3 {
+    width: 120px;
+    height: 110px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.hat {
+    background-color: black;
+}
+
+.cat-hat {
+    width: 123px;
+    height: 50px;
+    background-color: black;
+    border-radius: 30px 30px 0 0;
+    position: absolute;
+    bottom: 60%;
+    left: 55%;
+    transform: translateX(-50%) rotate(9deg);
+}
+
+.ear1,
+.ear2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid black;
+    top: -21px;
+}
+
+.ear1 {
+    left: 3px;
+    transform: rotate(-10deg);
+}
+
+.ear2 {
+    right: 3px;
+    transform: rotate(10deg);
+}
+
+.eye1,
+.eye2 {
+    width: 30px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+}
+
+.eye1 {
+    left: 15px;
+    transform: rotate(-10deg);
+}
+
+.eye2 {
+    right: 15px;
+    transform: rotate(10deg);
+}
+
+.mouth {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.mouth1,
+.mouth2 {
+    position: absolute;
+    width: 12px;
+    height: 4px;
+    background-color: black;
+}
+
+.mouth1 {
+    right: -1px;
+    transform-origin: right center;
+    transform: rotate(-45deg);
+}
+
+.mouth2 {
+    left: -1px;
+    transform-origin: left center;
+    transform: rotate(45deg);
+}
+
+.button {
+    background-color: black;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn1 {
+    top: 20px;
+}
+
+.btn2 {
+    top: 50px;
+}
+
+.btn3 {
+    top: 80px;
+}

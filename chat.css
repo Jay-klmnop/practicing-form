@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Bagel Fat One';
+    src: url(fonts/BagelFatOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans KR';
+    src: url(fonts/IBMPlexSansKR-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    border: 3px solid #b7aef0;
+    width: 400px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    border-radius: 3px;
+    background-color: ghostwhite;
+    font-family: 'IBM Plex Sans KR', system-ui;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #b7aef0;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+p span {
+    font-size: 24px;
+    font-family: 'Bagel Fat One', system-ui;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 15px;
+    background-image: url(assets/sora.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.message {
+    position: relative;
+    padding: 15px;
+    margin: 10px;
+    margin-top: 15px;
+    margin-left: 25px;
+    background-color: #d5ceff;
+    border-radius: 7px;
+    width: fit-content;
+    max-width: 80%;
+}
+
+.message::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #d5ceff;
+}
+
+main {
+    width: 100%;
+    flex: 1;
+}
+
+section {
+    display: flex;
+    padding: 5px;
+    background-color: #d5ceff;
+}
+
+section textarea {
+    flex: 1;
+    height: 60px;
+    resize: none;
+    border: none;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans KR', system-ui;
+}
+
+section button {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    border: none;
+    background-color: #b7aef0;
+    color: black;
+    font-family: 'Bagel Fat One', system-ui;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: #8a7fc2;
+}

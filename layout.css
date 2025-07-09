@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(54, 82, 54);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#wrap {
+    width: 100%;
+}
+
+header#in_header {
+    width: 1200px;
+    height: 100%;
+    background-color: rgb(249, 255, 252);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 200px;
+    padding: 0 20px;
+}
+
+#logo {
+    width: 300px;
+    background-image: url(assets/Go_Green.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10px;
+}
+
+#logo a {
+    display: block;
+    height: 100%;
+    text-indent: -9999px;
+}
+
+#gnb {
+    height: 100%;
+    background-color: rgb(249, 255, 252);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 50px;
+}
+
+#gnb>li {
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#section_1 {
+    width: 1200px;
+    height: 600px;
+    background-image: url(assets/leaves-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#section_2 {
+    width: 1200px;
+    height: 300px;
+    background-color: rgb(48, 70, 48);
+    padding: 50px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#section_2 .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.circle {
+    width: 240px;
+    height: 240px;
+    border: 5px solid black;
+    border-radius: 50%;
+    background-color: rgb(249, 255, 252);
+}
+
+#section_3 {
+    width: 1200px;
+    background-color: rgb(249, 255, 252);
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+#section_3 .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.con_wrap {
+    width: calc((100% - 40px) / 3);
+}
+
+.con_wrap>li {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(178, 211, 178);
+    margin-bottom: 20px;
+}
+
+.con_wrap>li:last-child {
+    margin-bottom: 0;
+}
+
+.con_wrap>.long_box {
+    background-color: rgb(128, 158, 128);
+}
+
+#top_btn {
+    width: 75px;
+    height: 75px;
+    background-color: rgb(121, 167, 121);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font: 900 15px/1.2 '';
+    text-align: center;
+    padding-top: 9px;
+}
+
+#top_btn a {
+    display: block;
+    color: rgb(240, 255, 246);
+    line-height: 28px;
+    display: block;
+    text-decoration: none;
+}
